@@ -16,7 +16,7 @@ class Solution {
         // if there is no pivot
 
         if(pvt == -1){
-            Arrays.sort(nums);
+           reverse(nums,0,n-1);
             return;
         }
 
@@ -29,21 +29,22 @@ class Solution {
         } 
 
         // reverse the rest of the remaning array after pvt element.
-        int left = pvt+1;
-        int right = n-1;
-        while(left<right){
-            swap(nums,left,right);
-            left++;
-            right--;
-        }
+        reverse(nums,pvt+1,n-1);
 
 
        
     }
 
-    private static void swap(int[] nums , int a,int b){
+    private  void swap(int[] nums , int a,int b){
         int temp = nums[a];
         nums[a] = nums[b];
         nums[b] = temp;
+    }
+    private void reverse(int[] nums, int left,int right){
+        while(left<right){
+            swap(nums,left,right);
+            left++;
+            right--;
+        }
     }
 }
