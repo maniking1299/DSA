@@ -1,6 +1,10 @@
 class Solution {
     public int[] rearrangeArray(int[] nums) {
 
+ // Optimal Solution 
+ // TC -> O(N)
+ // SC -> O(1)
+ 
         int res[] = new int[nums.length];
         int positive = 0;
         int negative = 1;
@@ -19,7 +23,10 @@ class Solution {
 
 
 
-
+///////////////////////////////////////////////////////////////////////////////////
+// Brute force 
+// TC -> O(n)
+// SC -> O(n)
 
         // int pos[] = new int[nums.length/2];
         // int neg[] = new int[nums.length/2];
