@@ -1,10 +1,10 @@
 class Solution {
     public int[] rearrangeArray(int[] nums) {
 
- // Optimal Solution 
+ // Optimal Solution -> It uses only 1 array and 1 time traversal;
  // TC -> O(N)
- // SC -> O(1)
- 
+ // SC -> O(N)
+
         int res[] = new int[nums.length];
         int positive = 0;
         int negative = 1;
