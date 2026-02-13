@@ -13,8 +13,12 @@ class Solution {
             ans = nums[i];
             freq = 1;
         }
-        else if(ans == nums[i]) freq++;
-        else freq--;
+        else if(ans == nums[i]) {
+            freq++;
+            }
+        else {
+            freq--;
+        }
     }
 
 return ans;
