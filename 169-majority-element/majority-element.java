@@ -11,8 +11,9 @@ class Solution {
     for(int i=0 ; i<nums.length ;i++){
         if(freq == 0){
             ans = nums[i];
+            freq = 1;
         }
-        if(ans == nums[i]) freq++;
+        else if(ans == nums[i]) freq++;
         else freq--;
     }
 
