@@ -1,5 +1,9 @@
 class Solution {
     public int singleNonDuplicate(int[] nums) {
+ 
+        // Tc -> O(log n)
+        // SC -> O(1)
+
         int n = nums.length;
         int low = 1;
         int high = n-2;
