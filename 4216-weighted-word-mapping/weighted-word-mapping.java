@@ -1,7 +1,7 @@
 class Solution {
     public String mapWordWeights(String[] words, int[] weights) {
 
-        // TC -> O(N^2) 
+        // TC -> O(N*L) 
         // SC -> O(N)
         
         StringBuilder sb = new StringBuilder();
