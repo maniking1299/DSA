@@ -1,5 +1,8 @@
 class Solution {
     public List<List<Integer>> threeSum(int[] nums) {
+
+        // Tc -> O(N^2)
+        // SC -> O(N^2)
         
         Arrays.sort(nums);
 
