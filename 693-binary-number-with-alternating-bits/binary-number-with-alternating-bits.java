@@ -1,6 +1,9 @@
 class Solution {
     public boolean hasAlternatingBits(int n) {
         
+        // TC -> O(N)
+        // SC -> O(1)
+        
         String binary = "";
 
         while(n>0){
