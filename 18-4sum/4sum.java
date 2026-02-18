@@ -2,6 +2,9 @@ class Solution {
     public List<List<Integer>> fourSum(int[] nums, int target) {
         List <List<Integer>> res = new ArrayList<>();
 
+        // Tc -> O(N^3)
+        // SC -> O(1)
+
         Arrays.sort(nums);
 
         int n = nums.length;
