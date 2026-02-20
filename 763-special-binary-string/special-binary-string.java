@@ -1,5 +1,9 @@
 class Solution {
     public String makeLargestSpecial(String s) {
+
+        // TC ->O(N^2)
+        // SC ->O(N)
+
         List <String> list = new ArrayList<>();
         int count = 0;
         int start = 0;
