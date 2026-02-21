@@ -2,6 +2,9 @@ class Solution {
     int cnt = 0;
     public int reversePairs(int[] nums) {
 
+      // TC -> O(N logN)  
+      // SC -> O(N)  
+
         mergeSort(nums,0,nums.length-1);
         return cnt;
     }
