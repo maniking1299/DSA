@@ -1,5 +1,8 @@
 class Solution {
     public int countPrimeSetBits(int left, int right) {
+
+        // Tc-> O(N)
+        // Sc-> O(1)
         
         int countSetbits = 0;
 
