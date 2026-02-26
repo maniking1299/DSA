@@ -1,6 +1,9 @@
 class Solution {
     public boolean isIsomorphic(String s, String t) {
 
+        // TC -> O(n^2)
+        // SC -> O(n)
+
         if(s.length()!=t.length()) return false;
         
         HashMap<Character,Character> hm = new HashMap<>();
