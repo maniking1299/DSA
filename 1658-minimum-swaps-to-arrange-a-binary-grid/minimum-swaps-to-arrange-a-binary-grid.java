@@ -7,7 +7,7 @@ class Solution {
         int n = grid.length;
         
         int cnt[] = new int[grid.length];
-
+    // Counting the trailing 0s 
         for(int i = 0; i < grid.length; i++){
             int count = 0;
 
@@ -21,6 +21,8 @@ class Solution {
 
             cnt[i] = count;
         }
+
+        // check in rows
        int swap=0;
         for(int i=0 ;i<n ; i++){
             int j= i;
@@ -30,7 +32,7 @@ class Solution {
                 j++;
             }
             if(j==n)return -1;
-
+    // swap the adjacent rows .
             while(j>i){
                 int temp = cnt[j];
                 cnt[j] = cnt[j-1];
