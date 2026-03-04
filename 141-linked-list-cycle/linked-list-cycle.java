@@ -12,6 +12,10 @@
 public class Solution {
     public boolean hasCycle(ListNode head) {
 
+        // Optmized //
+        //TC ->O(N)
+        //SC ->O(1)
+
         ListNode ptr1 = head;
         ListNode ptr2 = head;
 
