@@ -11,7 +11,26 @@
  */
 public class Solution {
     public boolean hasCycle(ListNode head) {
-        HashSet<ListNode> set = new HashSet<>();
+
+        ListNode ptr1 = head;
+        ListNode ptr2 = head;
+
+        while(ptr2!=null && ptr2.next!=null){
+               
+            ptr1 = ptr1.next;
+            ptr2 = ptr2.next.next;
+            if(ptr1 == ptr2){
+                return true;
+            }
+        }
+
+        return false;
+    }
+}
+///////////////////////////////////////////////////////////////////////////////////////
+    // TC-> O(N)
+    // SC-> O(N)
+    /*    HashSet<ListNode> set = new HashSet<>();
         while(head!=null){
             if(set.contains(head)){
                 return true;
@@ -22,5 +41,4 @@ public class Solution {
         }
 
         return false;
-    }
-}
+*/
