@@ -3,8 +3,35 @@ class Solution {
         int n=mat.length;
         int m=mat[0].length;
         int count = 0;
+//// Now we can optmize it ///////////////////////////////////////
+// TC -> O(n*m)
+// SC -> O(n*m)
 
-        for(int i=0 ; i<n ;i++){
+        int col[] = new int[m];
+        int row[] = new int[n];
+
+        for(int i=0 ;i<n ;i++){
+            for(int j=0 ;j<m ;j++){
+                if(mat[i][j] == 1){
+                    row[i]++;
+                    col[j]++;
+                }
+            }
+        }
+
+        for(int i=0 ;i<n ;i++){
+            for(int j=0 ;j<m ;j++){
+                if(mat[i][j] == 1 && row[i]==1 && col[j]==1){
+                    count++;
+                }
+            }
+        }
+
+    return count;
+  }
+}
+//////////////////////////////////////////////////////////////////////////////////////////////
+      /*  for(int i=0 ; i<n ;i++){
             for(int j=0 ;j<m ;j++){
                 if(mat[i][j] == 1){
                     if(checkRowCol(mat,i,j)){
@@ -29,5 +56,4 @@ class Solution {
         }
 
         return true;
-    }
-}
+    }*/
