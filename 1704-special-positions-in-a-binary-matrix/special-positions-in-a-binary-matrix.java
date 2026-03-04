@@ -5,7 +5,7 @@ class Solution {
         int count = 0;
 //// Now we can optmize it ///////////////////////////////////////
 // TC -> O(n*m)
-// SC -> O(n*m)
+// SC -> O(n+m)
 
         int col[] = new int[m];
         int row[] = new int[n];
