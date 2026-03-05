@@ -14,6 +14,9 @@ class Solution {
             return ;
         }
 
+    // TC ->O(N)
+    // SC ->O(1)
+    
         // Finding the mid point
         ListNode fast = head;
         ListNode slow = head;
