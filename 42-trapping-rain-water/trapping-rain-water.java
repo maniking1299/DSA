@@ -1,5 +1,8 @@
 class Solution {
     public int trap(int[] height) {
+
+        // TC->O(N)
+        // SC->O(N)
         
         int leftmax[] = new int[height.length];
         int rightmax[] = new int[height.length];
