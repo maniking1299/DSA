@@ -1,5 +1,9 @@
 class Solution {
     public int maxArea(int[] height) {
+
+        // TC ->O(N)
+        // SC ->O(1)
+        
         int left =0 ;
         int right = height.length-1;
         int max = Integer.MIN_VALUE;
