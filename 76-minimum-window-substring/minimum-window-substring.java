@@ -1,6 +1,9 @@
 class Solution {
     public String minWindow(String s, String t) {
 
+       // TC->O(N)
+       // SC->O(1)
+
         if(s.length()<t.length()) return"";
         
         int []freq = new int[128];
