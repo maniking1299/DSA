@@ -3,6 +3,9 @@ class Solution {
         int [] nextGtr = new int[nums2.length];
         int [] ans = new int[nums1.length];
 
+        // TC->O(N)
+        // SC->O(N)
+
         Stack<Integer> stack = new Stack<>();
 
         for(int i=nums2.length-1 ; i>=0 ;i--){
