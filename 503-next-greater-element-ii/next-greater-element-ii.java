@@ -3,7 +3,8 @@ class Solution {
         
         int [] nextGtr = new int[nums.length];
 
-        
+        // TC->O(N)
+        // SC->O(N)
 
         Stack<Integer> stack = new Stack<>();
 
