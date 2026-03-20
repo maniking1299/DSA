@@ -16,13 +16,16 @@ class Solution {
             int e = intervals[i][1];
 
             if(s <= end){
+                // If overlap then change the end
                 end = Math.max(end,e);
             }else{
+                // No overlap add the previous interval and proceed
                 ans.add(new int[]{start,end});
                 start =s;
                 end =e;
             }
         }
+        // if the last intervals are not overlapping then add all remaning;
         ans.add(new int[]{start,end});
 
         return ans.toArray(new int[ans.size()][]);
