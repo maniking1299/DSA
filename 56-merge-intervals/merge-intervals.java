@@ -1,6 +1,9 @@
 class Solution {
     public int[][] merge(int[][] intervals) {
         
+        // TC->O(N logN)
+        // SC->O(N)
+
         Arrays.sort(intervals,(a,b)->a[0]-b[0]);
 
         List<int[]> ans = new ArrayList<>();
