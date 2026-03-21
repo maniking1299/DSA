@@ -1,6 +1,9 @@
 class Solution {
     public int myAtoi(String s) {
  
+ // TC->O(N)
+ // SC->O(1)
+ 
         // Case 1
        s =  s.trim();
 
