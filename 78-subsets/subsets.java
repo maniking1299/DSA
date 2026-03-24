@@ -1,6 +1,9 @@
 class Solution {
     public List<List<Integer>> subsets(int[] nums) {
 
+        // TC->O(2^n * n)
+        // SC->O(2^n * n)
+
         List<List<Integer>> res =new ArrayList<List<Integer>>(); 
         
         recur(nums,0,new ArrayList<Integer>(),res);
