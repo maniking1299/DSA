@@ -1,6 +1,9 @@
 class Solution {
     public List<List<Integer>> subsetsWithDup(int[] nums) {
-        
+
+            //TC->O(2^n*n)
+            //SC->O(2^n*n)
+
         Arrays.sort(nums);
          List<List<Integer>> res =new ArrayList<List<Integer>>(); 
         
