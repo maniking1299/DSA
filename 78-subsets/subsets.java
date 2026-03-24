@@ -16,11 +16,11 @@ class Solution {
             return;
         }
          curr.add(nums[i]);
-
+        // Left Side Add
         recur(nums,i+1,curr,res);
-
+        //Undo the curr subset
         curr.remove(curr.size()-1);
-
+        // Right side Skip
         recur(nums,i+1,curr,res);
     }
 }
