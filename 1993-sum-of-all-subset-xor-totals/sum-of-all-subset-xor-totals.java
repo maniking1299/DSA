@@ -1,6 +1,7 @@
 class Solution {
     public int subsetXORSum(int[] nums) {
-        
+        //TC->O(2^N)
+        //SC->O(N)
         int ans = Xor(nums,0,0);
         return ans;
     }
